@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color:blue;
+    line-height: 1.6;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    color: orange;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: orange;
+}
+.hero {
+    background: linear-gradient(135deg, #222, #555);
+    color:lightgreen;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: orange;
+    color: black;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: gold;
+    transform: scale(1.05);
+}
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: orangered;
+}
+
+.light {
+    background-color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px lightgray;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    color: orangered;
+    margin-bottom: 12px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px darkgray;
+}
+
+.price-card h2 {
+    color: black;
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.price-card p {
+    margin: 10px 0;
+}
+
+.featured {
+    border: 3px solid orange;
+}
+table {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid lightgray;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:hover {
+    background-color: peachpuff;
+}
+
+
+form {
+    max-width: 450px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px lightgray;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: gold;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
