@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: mintcream;
+    color: darkslategray;
+    line-height: 1.7;
+}
+
+
+header {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    color: palegreen;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 6px 8px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: palegreen;
+}
+
+
+.hero {
+    background: linear-gradient(to right, darkseagreen, teal);
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: palegreen;
+    color: darkslategray;
+    padding: 12px 24px;
+    margin-top: 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: lightyellow;
+    transform: translateY(-3px);
+}
+
+
+section {
+    padding: 55px 20px;
+    text-align: center;
+    scroll-margin-top: 15px;
+}
+
+section h2 {
+    color: seagreen;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.soft {
+    background-color: honeydew;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 25px auto 0;
+}
+
+
+.card {
+    background-color: white;
+    width: 280px;
+    max-width: 100%;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px lightgray;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.card h3 {
+    color: seagreen;
+    font-size: 21px;
+    margin: 12px 0;
+}
+
+.card p {
+    margin-bottom: 8px;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 18px darkgray;
+}
+
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.03);
+}
+
+.instructor-card img {
+    height: 220px;
+    object-position: center;
+}
+
+.role {
+    color: teal;
+    font-weight: bold;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 25px auto 0;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid lightgray;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: darkslategray;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: honeydew;
+}
+
+
+.price-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-card h3 {
+    font-size: 24px;
+}
+
+.price {
+    color: seagreen;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.price span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.price-card p {
+    margin: 8px 0;
+}
+
+.price-card .btn {
+    margin-top: auto;
+}
+
+.featured {
+    border: 3px solid seagreen;
+    background-color: ivory;
+}
+
+/* Registration Form */
+form {
+    max-width: 480px;
+    width: 100%;
+    margin: 25px auto 0;
+    padding: 28px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px lightgray;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid darkgray;
+    border-radius: 6px;
+    background-color: white;
+    color: darkslategray;
+    font-size: 15px;
+}
+
+input:focus, select:focus {
+    outline: 2px solid seagreen;
+    border-color: seagreen;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    background-color: seagreen;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: darkslategray;
+    transform: translateY(-2px);
+}
+
+
+footer {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .hero {
+        padding: 75px 20px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .container {
+        gap: 18px;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    table {
+        min-width: 600px;
+    }
+}
+
+/* Responsive Design for Small Phones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
